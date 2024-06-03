@@ -1,0 +1,1 @@
+from .hh import HeadHunterAPI
