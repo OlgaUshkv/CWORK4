@@ -40,7 +40,6 @@ class JSONConnector(FileConnector):
 
     @staticmethod
     def _parse_vacancy_to_dict(vacancy: Vacancy) -> dict:
-        #print(vacancy)
         return {
             'name': vacancy.name,
             'url': vacancy.url,
@@ -55,7 +54,6 @@ class JSONConnector(FileConnector):
 
     @staticmethod
     def _parse_dict_to_vacancy(data: dict) -> Vacancy:
-        #print(data)
         return Vacancy(
             name=data['name'],
             url=data['url'],
